@@ -7,7 +7,8 @@ def coger_pocion(pocion):
 
     if inventario["pocion"] == None:
 
-        inventario["pocion"] == pocion
+        inventario["pocion"] = pocion
+        print(f"Has cogido una {pocion}")
 
     else:
 
@@ -23,7 +24,7 @@ def tirar_pocion():
 
     else:
 
-        inventario["pocion"] == None
+        inventario["pocion"] = None
 
     return inventario
 
@@ -31,7 +32,8 @@ def coger_arma(arma):
 
     if inventario["arma"] == None:
 
-        inventario["arma"] == arma
+        inventario["arma"] = arma
+        print(f"Has cogido un/a {arma}")
 
     else:
 
@@ -47,7 +49,7 @@ def tirar_arma():
 
     else:
 
-        inventario["arma"] == None
+        inventario["arma"] = None
 
     return inventario
 
@@ -55,7 +57,8 @@ def coger_escudo(escudo):
 
     if inventario["escudo"] == None:
 
-        inventario["escudo"] == escudo
+        inventario["escudo"] = escudo
+        print(f"Has cogido un {escudo}")
 
     else:
 
@@ -71,7 +74,7 @@ def tirar_escudo():
 
     else:
 
-        inventario["escudo"] == None
+        inventario["escudo"] = None
 
     return inventario
 
